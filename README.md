@@ -4,6 +4,8 @@
 
 ### Set up
 
+#### 1. Get Hadoop
+
 Download **Hadoop 2.6.4** from the [hadoop-2.6.4.tar.gz - Apache Download Mirrors Site](http://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-2.6.4/hadoop-2.6.4.tar.gz)
 
 And extract this to the project folder. Your project folder should look similar to the following:
@@ -43,6 +45,23 @@ C:.
         └───missouristate
             └───csc333
 ```
+
+#### 2. Using Eclipse
+
+##### Get the source through Eclipse
+
+Follow this guide: https://www.lennu.net/import-git-project-into-eclipse/
+
+ * **URI** will be this Github repository URL
+ * You can import it as a **General Project**
+
+##### Configure the Project
+
+From the Package Explorer, right click the "ngram-jam-project" project, and open properties for the project.
+
+
+ * Set default encoding to `UTF-8`
+   1. `Menu: File > Properties > Text Encoding`
 
 ## Research
 
