@@ -73,6 +73,11 @@ From the Package Explorer, right click the "ngram-jam-project" project, and open
 
  * Set default encoding to `UTF-8`
    1. `Menu: File > Properties > Text Encoding`
+   
+##### Extra
+
+
+Found this Eclipse Hadoop plugin, might be useful for debugging hadoop issues: http://www.srccodes.com/p/article/47/build-install-configure-eclipse-plugin-apache-hadoop
 
 ## Research
 

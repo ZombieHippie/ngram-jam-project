@@ -16,7 +16,7 @@ import org.apache.hadoop.util.ToolRunner;
 public class NGramJam extends Configured implements Tool{
 	
 	public static void main(String[] args) throws Exception{
-		int exitCode = ToolRunner.run(new WordCount(), args);
+		int exitCode = ToolRunner.run(new NGramJam(), args);
 		System.exit(exitCode);
 	}
  
@@ -29,7 +29,7 @@ public class NGramJam extends Configured implements Tool{
 		}
 	
 		Job job = new org.apache.hadoop.mapreduce.Job();
-		job.setJarByClass(WordCount.class);
+		job.setJarByClass(NGramJam.class);
 		job.setJobName("WordCounter");
 		
 		FileInputFormat.addInputPath(job, new Path(args[0]));
@@ -38,8 +38,8 @@ public class NGramJam extends Configured implements Tool{
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(IntWritable.class);
 		job.setOutputFormatClass(TextOutputFormat.class);
-		job.setMapperClass(WordCountMapper.class);
-		job.setReducerClass(WordCountReducer.class);
+		job.setMapperClass(NGramJamMapper.class);
+		job.setReducerClass(NGramJamReducer.class);
 	
 		int returnValue = job.waitForCompletion(true) ? 0:1;
 		System.out.println("job.isSuccessful " + job.isSuccessful());
