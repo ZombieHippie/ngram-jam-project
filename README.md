@@ -11,6 +11,10 @@ Apache Maven allows us to easily organize libraries outside the scope of the Jav
 Follow the following instructions to equip your computer with Apache Maven:
 https://maven.apache.org/install.html
 
+#### 1. Import the project
+
+http://stackoverflow.com/questions/14896152/how-to-build-and-run-maven-projects-after-importing-into-eclipse-ide
+
 #### 1. Get Hadoop
 
 Download **Hadoop 2.6.4** from the [hadoop-2.6.4.tar.gz - Apache Download Mirrors Site](http://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-2.6.4/hadoop-2.6.4.tar.gz)
