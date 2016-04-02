@@ -4,17 +4,6 @@
 
 ### Set up
 
-#### 0. Install Apache Maven
-
-Apache Maven allows us to easily organize libraries outside the scope of the Java libraries such as the hadoop-client and the JUnit testing framework.
-
-Follow the following instructions to equip your computer with Apache Maven:
-https://maven.apache.org/install.html
-
-#### 1. Import the project
-
-http://stackoverflow.com/questions/14896152/how-to-build-and-run-maven-projects-after-importing-into-eclipse-ide
-
 #### 1. Get Hadoop
 
 Download **Hadoop 2.6.4** from the [hadoop-2.6.4.tar.gz - Apache Download Mirrors Site](http://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-2.6.4/hadoop-2.6.4.tar.gz)
@@ -59,21 +48,26 @@ C:.
 
 #### 2. Using Eclipse
 
-##### Get the source through Eclipse
 
-Follow this guide: https://www.lennu.net/import-git-project-into-eclipse/
+##### Install Apache Maven
 
- * **URI** will be this Github repository URL
- * You can import it as a **General Project**
+Apache Maven allows us to easily organize libraries outside the scope of the Java libraries such as the hadoop-client and the JUnit testing framework.
 
-##### Configure the Project
+Follow the following instructions to equip your computer with Apache Maven:
+https://maven.apache.org/install.html
 
-From the Package Explorer, right click the "ngram-jam-project" project, and open properties for the project.
+##### Import the project
 
+First clone this repository from github, then do the following instructions to import that project as a Maven project:
 
- * Set default encoding to `UTF-8`
-   1. `Menu: File > Properties > Text Encoding`
-   
+http://stackoverflow.com/questions/14896152/how-to-build-and-run-maven-projects-after-importing-into-eclipse-ide
+
+##### Configuring Hadoop on Windows
+
+It is entirely necessary that your Java installation does not have spaces in it! https://stackoverflow.com/questions/26990243/hadoop-installation-on-windows#
+
+Then try to run `hadoop-installation-test.bat` from commandline to see if you get hadoop's version information, if so, you're good! If not look up how to install Hadoop on your system and do your troubleshooting!
+
 ##### Extra
 
 
